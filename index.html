@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TicTacToe</title>
+    <link rel="icon" type="image/x-icon" href="icon.ico">
+
+      <script defer src="/game.js"></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"/>
+
+    <link rel="stylesheet" href="game-stylesheet.css">
+    <link rel="stylesheet" href="UI-stylesheet.css">
+</head>
+
+<body>
+    <div class="game">
+      <div class="game-details">
+        <div class="x-turn">
+          <p class="turn">X Turn</p>
+        </div>
+        <div class="o-turn">
+          <p class="turn">0 Turn</p>
+        </div>
+      </div>
+      <div class="board"> 
+        <div class="box" data-row="0" data-col="0"></div>
+        <div class="box" data-row="0" data-col="1"></div>
+        <div class="box" data-row="0" data-col="2"></div>
+        <div class="box" data-row="1" data-col="0"></div>
+        <div class="box" data-row="1" data-col="1"></div>
+        <div class="box" data-row="1" data-col="2"></div>
+        <div class="box" data-row="2" data-col="0"></div>
+        <div class="box" data-row="2" data-col="1"></div>
+        <div class="box" data-row="2" data-col="2"></div>
+      </div>
+    </div>
+
+      <span class="material-symbols-outlined" id="setting-wheel">settings</span>
+      <div class="stats">
+        <p class="multiplayer-display">Players: </p>
+        <p class="difficulty-display">Difficulty: </p>
+      </div>
+      
+
+      <div class="settings">
+
+        <div class="button multiplayer-settings">
+          <p class="button-text">Multiplayer</p>
+        </div>
+
+        <div class="multiplayer-menu">
+          <div class="button">
+          <p class="button-text players" data-players="Singleplayer">Singleplayer</p>
+          <p class="additional">(against bot)</p>
+          </div>
+          <div class="button">
+          <p class="button-text players" data-players="Multiplayer">Multiplayer</p>
+          <p class="additional">(against friend)</p>
+          </div>
+          <span class="material-symbols-outlined back">arrow_back</span>
+        </div>
+
+        <div class="button difficulty-settings">
+          <p class="button-text">Difficulty</p>
+          <p class="additional">(for singleplayer)</p>
+        </div>
+
+        <div class="difficulty-menu">
+          <div class="button difficulty" data-difficulty="Easy">
+          <p class="button-text">Easy</p>
+        </div>
+        <div class="button difficulty" data-difficulty="Medium">
+          <p class="button-text">Medium</p>
+        </div>
+        <div class="button difficulty" data-difficulty="Hard">
+          <p class="button-text">Hard</p>
+        </div>
+        <span class="material-symbols-outlined back">arrow_back</span>
+        </div>
+
+      </div>
+  
+    <div class="game-over">
+      <p class="end-message"></p>
+      <div class="refresh-button button">
+        <p class="button-text">Refresh</p>
+      </div>
+    </div>
+
+</body>
+
+</html>
