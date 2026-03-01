@@ -70,7 +70,7 @@ div.board {
     min-height: 0;
 }
 
-.board .box {
+.board .cell {
     background-color: #e8e5e5;
     overflow: hidden;
     display: flex;
@@ -78,9 +78,8 @@ div.board {
     align-items: center;
     min-width: 0;
     min-height: 0;
-}
 
-p.clicked {
     font-size: 10vw;
     color:white;
+    user-select: none;
 }

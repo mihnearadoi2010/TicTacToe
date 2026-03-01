@@ -95,6 +95,10 @@ p.end-message {
     font-size: clamp(60px, 10vw, 120px);
 }
 
+.difficulty-display {
+    display: none;
+}
+
 .difficulty-menu, .multiplayer-menu {
     position: fixed;
     z-index: 2;
@@ -106,7 +110,6 @@ p.end-message {
     display: none;
     justify-content: center;
     align-items: center;
-
 }
 
 @media (max-width: 600px) {

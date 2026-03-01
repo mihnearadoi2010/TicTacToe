@@ -8,13 +8,13 @@
     <title>TicTacToe</title>
     <link rel="icon" type="image/x-icon" href="icon.ico">
 
-      <script defer src="/game.js"></script>
+      <script defer type="module" src="javascript-code/main.js"></script>
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=arrow_back"/>
 
-    <link rel="stylesheet" href="game-stylesheet.css">
-    <link rel="stylesheet" href="UI-stylesheet.css">
+    <link rel="stylesheet" href="styles/game-stylesheet.css">
+    <link rel="stylesheet" href="styles/UI-stylesheet.css">
 </head>
 
 <body>
@@ -24,19 +24,19 @@
           <p class="turn">X Turn</p>
         </div>
         <div class="o-turn">
-          <p class="turn">0 Turn</p>
+          <p class="turn">O Turn</p>
         </div>
       </div>
       <div class="board"> 
-        <div class="box" data-row="0" data-col="0"></div>
-        <div class="box" data-row="0" data-col="1"></div>
-        <div class="box" data-row="0" data-col="2"></div>
-        <div class="box" data-row="1" data-col="0"></div>
-        <div class="box" data-row="1" data-col="1"></div>
-        <div class="box" data-row="1" data-col="2"></div>
-        <div class="box" data-row="2" data-col="0"></div>
-        <div class="box" data-row="2" data-col="1"></div>
-        <div class="box" data-row="2" data-col="2"></div>
+        <div class="cell" data-row="0" data-col="0"></div>
+        <div class="cell" data-row="0" data-col="1"></div>
+        <div class="cell" data-row="0" data-col="2"></div>
+        <div class="cell" data-row="1" data-col="0"></div>
+        <div class="cell" data-row="1" data-col="1"></div>
+        <div class="cell" data-row="1" data-col="2"></div>
+        <div class="cell" data-row="2" data-col="0"></div>
+        <div class="cell" data-row="2" data-col="1"></div>
+        <div class="cell" data-row="2" data-col="2"></div>
       </div>
     </div>
 
